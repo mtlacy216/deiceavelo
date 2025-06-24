@@ -1,0 +1,749 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Boycott Avelo - Nashville Chapter</title>
+  
+  <!-- Standard meta tags -->
+  <meta name="description" content="Low Fares. High Cost to Humanity. Avelo Airline subsidizes its bottom rate commercial flights with subhuman deportation flights for ICE.">
+  <link rel="canonical" href="https://boycottavelo.com">
+  
+  <!-- Open Graph meta tags for social sharing -->
+  <meta property="og:title" content="Boycott Avelo - Nashville Chapter">
+  <meta property="og:type" content="website">
+  <meta property="og:url" content="https://boycottavelo.com">
+  <meta property="og:description" content="Low Fares. High Cost to Humanity. Avelo Airline subsidizes its bottom rate commercial flights with subhuman deportation flights for ICE.">
+  <meta property="og:image" content="https://storage.googleapis.com/art_homelessness/DE-ICE%20Avelo.png">
+  <meta property="og:image:width" content="1200">
+  <meta property="og:image:height" content="630">
+  <meta property="og:image:type" content="image/png">
+  <meta property="og:image:alt" content="DE-ICE Avelo - Boycott Avelo Airlines campaign logo">
+  <meta property="og:locale" content="en_US">
+
+  <!-- Twitter Card meta tags -->
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:site" content="@BoycottAvelo">
+  <meta name="twitter:creator" content="@BoycottAvelo">
+  <meta name="twitter:title" content="Boycott Avelo - Nashville Chapter">
+  <meta name="twitter:description" content="Low Fares. High Cost to Humanity. Avelo Airline subsidizes its bottom rate commercial flights with subhuman deportation flights for ICE.">
+  <meta name="twitter:image" content="https://storage.googleapis.com/art_homelessness/DE-ICE%20Avelo.png">
+  <meta name="twitter:image:alt" content="DE-ICE Avelo - Boycott Avelo Airlines campaign logo">
+
+  <link href="https://fonts.googleapis.com/css2?family=Nunito+Sans:wght@400;600;700&display=swap" rel="stylesheet">
+  <style>
+    /* —— FULL CSS FROM YOUR ORIGINAL FILE —— */
+    * { margin: 0; padding: 0; box-sizing: border-box; }
+    body {
+      font-family: 'Nunito Sans', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+      background: #502E90;
+      min-height: 100vh;
+      color: white;
+      position: relative;
+    }
+    html, body { margin: 0; padding: 0; }
+    .container {
+      max-width: 600px;
+      margin: 0 auto;
+      padding: 2rem 1rem;
+      min-height: 100vh;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      position: relative;
+      z-index: 2;
+    }
+    .header { text-align: center; margin-bottom: 2rem; }
+    .logo-area { margin-bottom: 1.5rem; }
+    .logo-image { width: 200px; display: block; margin: 0 auto 1rem; border-radius: 12px; box-shadow: 0 8px 24px rgba(0,0,0,0.3); }
+    .chapter-image { width: 180px; display: block; margin: 0 auto 0.5rem; opacity: 0.9; }
+    .brand-name { font-size: 2rem; font-weight: 700; margin-bottom: 0.5rem; text-transform: lowercase; letter-spacing: -0.02em; }
+    .campaign-tagline { font-size: 1.1rem; color: #1CBED1; font-weight: 600; margin-bottom: 0.5rem; }
+    .description { color: rgba(255,255,255,0.9); font-size: 0.95rem; line-height: 1.4; max-width: 400px; }
+    .links { width: 100%; display: flex; flex-direction: column; gap: 1.25rem; }
+    .link-item {
+      background: rgba(255,255,255,0.1);
+      border: 2px solid transparent;
+      border-radius: 25px;
+      padding: 1.5rem 1.75rem;
+      text-decoration: none;
+      color: white;
+      transition: all 0.3s ease;
+      display: flex;
+      align-items: center;
+      gap: 1.25rem;
+      backdrop-filter: blur(10px);
+      position: relative;
+      overflow: hidden;
+    }
+    .link-item::before {
+      content: '';
+      position: absolute; top: 0; left: -100%; width: 100%; height: 100%;
+      background: linear-gradient(90deg, transparent, rgba(255,206,4,0.2), transparent);
+      transition: left 0.6s ease;
+    }
+    .link-item:hover::before { left: 100%; }
+    .link-item:hover {
+      background: rgba(28,190,209,0.2);
+      border-color: #1CBED1;
+      transform: translateY(-3px);
+    }
+    .link-item.primary { background: #FFCE04; color: #502E90; font-weight: 700; }
+    .link-item.primary:hover { background: #1CBED1; color: white; }
+    .link-item.secondary {
+      border-color: #1CBED1;
+      background: rgba(28,190,209,0.1);
+    }
+    .link-icon { width: 32px; height: 32px; display: flex; align-items: center; justify-content: center; flex-shrink: 0; font-size: 1.3rem; }
+    .link-content { flex: 1; }
+    .link-title { font-weight: 600; font-size: 1.1rem; margin-bottom: 0.4rem; text-transform: lowercase; line-height: 1.3; }
+    .link-desc { font-size: 0.9rem; opacity: 0.9; line-height: 1.4; }
+    body::before {
+      content: '';
+      position: fixed; top:0; left:0; right:0; bottom:0;
+      background:
+        radial-gradient(circle at 20% 20%, rgba(255,206,4,0.1) 0%, transparent 50%),
+        radial-gradient(circle at 80% 80%, rgba(28,190,209,0.1) 0%, transparent 50%),
+        radial-gradient(circle at 50% 50%, rgba(255,255,255,0.05) 0%, transparent 70%);
+      pointer-events: none; z-index:1;
+    }
+    @media (min-width: 768px) {
+      body { background: linear-gradient(135deg, #502E90 0%, #3d2070 50%, #502E90 100%); }
+      .container { max-width:1200px; padding:3rem 2rem; }
+      .header { margin-bottom:3rem; }
+      .logo-image { width:300px; }
+      .chapter-image { width:240px; }
+      .brand-name { font-size:2.8rem; }
+      .campaign-tagline { font-size:1.3rem; }
+      .description { font-size:1.1rem; }
+      .links {
+        display:grid;
+        grid-template-columns:repeat(auto-fit,minmax(300px,1fr));
+        gap:2rem;
+        max-width:900px;
+        margin:0 auto;
+      }
+      .link-item {
+        border-radius:30px;
+        padding:2rem;
+        flex-direction:column;
+        text-align:center;
+        gap:1.5rem;
+        box-shadow:0 10px 30px rgba(0,0,0,0.3);
+        transition:all 0.4s cubic-bezier(0.175,0.885,0.32,1.275);
+      }
+      .link-item:hover {
+        transform:translateY(-8px) scale(1.02);
+        box-shadow:0 20px 50px rgba(0,0,0,0.4);
+      }
+      .link-icon { width:40px; height:40px; font-size:1.5rem; margin-bottom:0.5rem; }
+      .link-title { font-size:1.4rem; margin-bottom:0.5rem; }
+      .link-desc { font-size:1rem; line-height:1.4; }
+    }
+    /* — Modal & Social styles — */
+    .sub-modal {
+      position:fixed; top:0; left:0; right:0; bottom:0;
+      background:rgba(80,46,144,0.95);
+      display:none; align-items:flex-start; justify-content:center;
+      z-index:1001; padding:1rem; backdrop-filter:blur(10px); overflow-y:auto;
+    }
+    .sub-modal-content {
+      background:rgba(255,255,255,0.1);
+      border:2px solid #1CBED1;
+      border-radius:24px;
+      padding:2rem;
+      max-width:1000px; width:100%; margin:2rem auto;
+      box-shadow:0 20px 60px rgba(0,0,0,0.5);
+      backdrop-filter:blur(20px);
+      position:relative; overflow:hidden;
+    }
+    .sub-modal-header {
+      display:flex; justify-content:space-between; align-items:center;
+      margin-bottom:2rem; padding-bottom:1.5rem; border-bottom:1px solid rgba(255,255,255,0.2);
+      position:sticky; top:0; background:rgba(255,255,255,0.1); backdrop-filter:blur(10px);
+      margin:-2rem -2rem 2rem -2rem; padding:1.5rem 2rem; border-radius:24px 24px 0 0;
+    }
+    .sub-modal-header h2 { font-size:1.8rem; line-height:1.3; margin:0; text-transform:lowercase; }
+    .sub-cards-grid { display:grid; gap:2rem; margin-top:0; }
+    .sub-card {
+      background:rgba(255,255,255,0.08); border:1px solid rgba(255,255,255,0.25);
+      border-radius:16px; padding:2rem; transition:all 0.3s ease; overflow:hidden;
+    }
+    .sub-card:hover { background:rgba(255,255,255,0.12); transform:translateY(-2px); }
+    .sub-card h3 { color:#FFCE04; margin-bottom:1rem; font-size:1.4rem; font-weight:700; }
+    .sub-card h4 { color:#1CBED1; margin-bottom:1.5rem; font-size:1.1rem; font-weight:600; }
+    .sub-card .content-text {
+      line-height:1.7; color:rgba(255,255,255,0.95); font-size:1rem;
+      word-wrap:break-word; overflow-wrap:break-word; hyphens:auto;
+    }
+    .sub-card .content-text p { margin-bottom:1.5rem; }
+    .sub-card img {
+      width:100%; border-radius:12px; margin-bottom:1.5rem;
+      box-shadow:0 8px 24px rgba(0,0,0,0.3);
+    }
+    .social-share-image { 
+      width:100%; max-width:400px; border-radius:12px; margin:0 auto 1rem auto; 
+      display:block; cursor:pointer; transition:all 0.3s ease;
+      box-shadow:0 8px 24px rgba(0,0,0,0.3);
+    }
+    .social-share-image:hover { transform:scale(1.02); box-shadow:0 12px 32px rgba(0,0,0,0.4); }
+    .social-message {
+      background:rgba(255,255,255,0.08); padding:1rem; border-radius:12px;
+      margin-bottom:1rem; line-height:1.4; font-size:0.95rem; border:1px solid rgba(255,255,255,0.15);
+    }
+    .image-action-buttons {
+      display:flex; gap:0.75rem; justify-content:center; margin-bottom:1.5rem;
+    }
+    .image-action-btn {
+      display:flex; align-items:center; gap:0.5rem; padding:0.75rem 1.25rem;
+      background:rgba(255,206,4,0.9); color:#502E90; border:none; border-radius:12px;
+      font-weight:600; cursor:pointer; transition:all 0.3s ease; text-decoration:none;
+      font-size:0.9rem;
+    }
+    .image-action-btn:hover { background:#1CBED1; color:white; transform:translateY(-2px); }
+    .image-action-btn.download { background:rgba(28,190,209,0.9); color:white; }
+    .image-action-btn.download:hover { background:rgba(255,206,4,0.9); color:#502E90; }
+    .social-buttons-grid {
+      display:grid; grid-template-columns:repeat(auto-fit,minmax(120px,1fr)); gap:0.75rem; margin-top:1rem;
+    }
+    .toast {
+      position:fixed; top:20px; right:20px; z-index:2000;
+      background:linear-gradient(135deg, #FFCE04, #1CBED1); color:#502E90;
+      padding:1rem 1.5rem; border-radius:12px; font-weight:600;
+      box-shadow:0 8px 24px rgba(0,0,0,0.3); backdrop-filter:blur(10px);
+      transform:translateX(400px); transition:all 0.4s cubic-bezier(0.175,0.885,0.32,1.275);
+      display:flex; align-items:center; gap:0.75rem;
+    }
+    .toast.show { transform:translateX(0); }
+    .toast-icon { font-size:1.2rem; }
+    .social-share-btn {
+      display:flex; align-items:center; justify-content:center; gap:0.5rem;
+      padding:0.8rem; background:rgba(255,255,255,0.1); border:1px solid rgba(255,255,255,0.2);
+      border-radius:12px; color:white; text-decoration:none; font-weight:600; font-size:0.9rem;
+      cursor:pointer; transition:all 0.3s;
+    }
+    .social-share-btn:hover { background:rgba(255,255,255,0.2); transform:translateY(-2px); }
+    .social-share-btn.twitter  { border-color:#1DA1F2; } .social-share-btn.twitter:hover  { background:rgba(29,161,242,0.2); }
+    .social-share-btn.facebook { border-color:#1877F2; } .social-share-btn.facebook:hover { background:rgba(24,119,242,0.2); }
+    .social-share-btn.linkedin { border-color:#0077B5; } .social-share-btn.linkedin:hover { background:rgba(0,119,181,0.2); }
+    .social-share-btn.whatsapp { border-color:#25D366; } .social-share-btn.whatsapp:hover { background:rgba(37,211,102,0.2); }
+    .social-share-btn.telegram { border-color:#0088CC; } .social-share-btn.telegram:hover { background:rgba(0,136,204,0.2); }
+    .social-share-btn.pinterest{ border-color:#BD081C;} .social-share-btn.pinterest:hover{ background:rgba(189,8,28,0.2); }
+    .social-share-btn.reddit   { border-color:#FF4500;} .social-share-btn.reddit:hover   { background:rgba(255,69,0,0.2); }
+    .social-share-btn.email    { border-color:#FFCE04;} .social-share-btn.email:hover    { background:rgba(255,255,255,0.2); }
+    .social-icon { font-size:1.2rem; }
+    
+    /* Petition iframe styles */
+    .petition-iframe-container {
+      width: 100%;
+      height: 70vh;
+      min-height: 500px;
+      border-radius: 12px;
+      overflow: hidden;
+      box-shadow: 0 8px 24px rgba(0,0,0,0.3);
+      background: white;
+      position: relative;
+    }
+    .petition-iframe {
+      width: 100%;
+      height: 100%;
+      border: none;
+      display: none; /* Hidden until loaded */
+    }
+    .iframe-loading, .iframe-error {
+      background: rgba(255,255,255,0.95);
+      border-radius: 12px;
+      padding: 2rem;
+    }
+    
+    /* Debug tools styling */
+    .debug-tools {
+      position: fixed; bottom: 20px; right: 20px; z-index: 1000;
+      background: rgba(255,255,255,0.1); border: 1px solid rgba(255,255,255,0.2);
+      border-radius: 12px; padding: 1rem; backdrop-filter: blur(10px);
+    }
+    .debug-btn {
+      background: #FFCE04; color: #502E90; border: none; padding: 0.5rem 1rem;
+      border-radius: 8px; cursor: pointer; font-weight: 600; margin: 0.25rem;
+      transition: all 0.3s ease;
+    }
+    .debug-btn:hover { background: #1CBED1; color: white; }
+    
+    @media (max-width:768px) {
+      .sub-modal      { padding:0.5rem; align-items:flex-start; }
+      .sub-modal-content { padding:1.5rem; margin:1rem auto; border-radius:20px; }
+      .sub-card       { padding:1.5rem; }
+      .toast { top: 10px; right: 10px; padding: 0.75rem 1rem; font-size: 0.9rem; }
+      .image-action-buttons { flex-direction: column; }
+      .image-action-btn { justify-content: center; }
+      .petition-iframe-container { height: 60vh; min-height: 400px; }
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <div class="header">
+      <div class="logo-area">
+        <img src="https://storage.googleapis.com/art_homelessness/DE-ICE%20Avelo.png"
+             alt="DE-ICE Avelo Logo"
+             class="logo-image">
+        <img src="https://storage.googleapis.com/art_homelessness/17f929ef-a7f8-4d3b-959c-d7ec4801edaa.png"
+             alt="Nashville Chapter"
+             class="chapter-image">
+        <h1 class="brand-name">boycott avelo</h1>
+        <p class="campaign-tagline">Low Fares. High Cost to Humanity.</p>
+        <p class="description">
+          Avelo Airline subsidizes its bottom rate commercial flights with subhuman deportation flights for ICE.
+        </p>
+      </div>
+    </div>
+    <div class="links"></div>
+  </div>
+
+  <div id="subModal" class="sub-modal">
+    <div class="sub-modal-content">
+      <div class="sub-modal-header">
+        <h2 id="subModalTitle">modal content</h2>
+        <button class="debug-btn" onclick="closeSubModal()">close</button>
+      </div>
+      <div id="subModalContent"></div>
+    </div>
+  </div>
+
+  <!-- Toast notification container -->
+
+  <script>
+    let cardData = [];
+
+    async function loadData() {
+      try {
+        const res = await fetch('https://n8n.intelechia.com/webhook/avelo-get');
+        const data = await res.json();
+        cardData = processWebhookData(data);
+        updateCards();
+      } catch (e) {
+        console.error(e);
+        showFallbackContent();
+      }
+    }
+
+    function processWebhookData(data) {
+      console.log('Raw webhook data:', data); // Debug: see all incoming data
+      
+      // find main cards (have a Card Title and Order)
+      const mainCards = data.filter(d => {
+        const hasTitle = d['Card Title'];
+        const hasOrder = d['Card Order'] != null;
+        return hasTitle && hasOrder;
+      });
+      
+      console.log('Main cards found:', mainCards.map(c => ({ 
+        id: c.id, 
+        title: c['Card Title'], 
+        order: c['Card Order'],
+        type: c.Type 
+      })));
+
+      return mainCards.map(card => {
+        // base card object
+        const obj = {
+          id:       card.id,
+          title:    card['Card Title'],
+          desc:     card.Description || '',
+          url:      card.URL || '#',
+          order:    +card['Card Order'],
+          type:     card.Type || 'link',
+          icon:     card.Icon || '🔗',
+          classes:  card.Classes || '',
+          embedInModal: card.embedInModal || false,
+          modalContent: []
+        };
+
+        // Track seen combinations to prevent true duplicates
+        const seenCombinations = new Set();
+
+        // Helper function to create a unique key for each subcard
+        const createSubcardKey = (item) => {
+          return `${item.headline}|${item.subject}|${item.image}`.toLowerCase();
+        };
+
+        // First, parse any Modal Content JSON on the card itself
+        if (card['Modal Content'] && Array.isArray(card['Modal Content'])) {
+          card['Modal Content'].forEach(str => {
+            try {
+              const m = JSON.parse(str);
+              const key = createSubcardKey(m);
+              
+              if (!seenCombinations.has(key)) {
+                seenCombinations.add(key);
+                
+                // Try to find the actual record this JSON represents
+                let recordId = m.subCardRecordId || m.recordId || m.id;
+                let priority = m.priority || 'medium';
+                
+                // Look for a matching child record to get the real ID and priority
+                const matchingChild = data.find(child => 
+                  (child.headline === m.headline || child.subject === m.subject) &&
+                  Array.isArray(child.parent_card) && 
+                  child.parent_card.includes(card.id)
+                );
+                
+                if (matchingChild) {
+                  recordId = matchingChild.subCardRecordId || matchingChild.id;
+                  priority = matchingChild.priority || priority;
+                }
+                
+                obj.modalContent.push({
+                  subCardRecordId: recordId || `json_${Date.now()}_${Math.random()}`,
+                  headline: m.headline || '',
+                  subject:  m.subject  || '',
+                  content:  m.content  || '',
+                  image:    m.image    || '',
+                  priority: priority
+                });
+              }
+            } catch (e) {
+              console.error('Error parsing Modal Content JSON:', str, e);
+            }
+          });
+        }
+
+        // Then, find all children records that reference this card as parent
+        data.forEach(child => {
+          if (Array.isArray(child.parent_card) && child.parent_card.includes(card.id)) {
+            const childData = {
+              subCardRecordId: child.subCardRecordId || child.id,
+              headline: child.headline || '',
+              subject:  child.subject  || '',
+              content:  child.content  || '',
+              image:    child.image    || '',
+              priority: child.priority || 'medium'
+            };
+            
+            const key = createSubcardKey(childData);
+            
+            // Only add if we haven't seen this exact combination before
+            if (!seenCombinations.has(key)) {
+              seenCombinations.add(key);
+              obj.modalContent.push(childData);
+            }
+          }
+        });
+
+        // Sort modal content by priority
+        const priorityOrder = { 'high': 0, 'medium': 1, 'low': 2 };
+        obj.modalContent.sort((a, b) => {
+          return (priorityOrder[a.priority] || 1) - (priorityOrder[b.priority] || 1);
+        });
+
+        console.log(`Modal content for "${card['Card Title']}" (${card.id}):`, 
+          obj.modalContent.map(item => ({ 
+            headline: item.headline, 
+            priority: item.priority,
+            recordId: item.subCardRecordId 
+          }))
+        );
+
+        return obj;
+      })
+      .sort((a,b) => a.order - b.order);
+    }
+
+    function showFallbackContent() {
+      document.querySelector('.links').innerHTML = `
+        <div class="empty-state">
+          <h3>Content Coming Soon</h3>
+          <p>We're updating this page with the latest campaign information. Please check back soon!</p>
+        </div>`;
+    }
+
+    function formatContent(text) {
+      if (!text) return '';
+      return text
+        .replace(/\r\n/g,'\n')
+        .split('\n\n')
+        .map(p => `<p>${p
+          .replace(/\*\*(.*?)\*\*/g,'<strong>$1</strong>')
+          .replace(/\*(.*?)\*/g,'<em>$1</em>')
+          .replace(/\[([^\]]+)\]\(([^)]+)\)/g,'<a href="$2" target="_blank">$1</a>')
+        }</p>`)
+        .join('');
+    }
+
+    function updateCards() {
+      const container = document.querySelector('.links');
+      container.innerHTML = '';
+      cardData.forEach(card => {
+        const a = document.createElement('a');
+        a.className = `link-item ${card.classes}`;
+        if (card.type === 'social') {
+          a.href = '#';
+          a.onclick = e => { e.preventDefault(); openSocialModal(card); };
+        } else if (card.type === 'modal') {
+          a.href = '#';
+          a.onclick = e => { e.preventDefault(); openSubModal(card); };
+        } else if (card.type === 'link' && 
+                   (card.title.toLowerCase().includes('petition') || 
+                    card.embedInModal === true)) {
+          // If it's a petition link or explicitly marked for modal embedding
+          a.href = '#';
+          a.onclick = e => { e.preventDefault(); openPetitionModal(card); };
+        } else {
+          a.href = card.url;
+          if (card.url && card.url !== '#') a.target = '_blank';
+        }
+        a.innerHTML = `
+          <div class="link-icon">${card.icon}</div>
+          <div class="link-content">
+            <div class="link-title">${card.title}</div>
+            <div class="link-desc">${card.desc}</div>
+          </div>`;
+        container.appendChild(a);
+      });
+    }
+
+    function openSubModal(card) {
+      const modal = document.getElementById('subModal');
+      document.getElementById('subModalTitle').textContent = card.title;
+      let html = '';
+      if (card.modalContent.length) {
+        html = '<div class="sub-cards-grid">';
+        card.modalContent.forEach(item=>{
+          html += '<div class="sub-card">';
+          if (item.image) {
+            html += `<img src="${item.image}" onclick="copyImageToClipboard('${item.image}')" `
+                 +  `style="cursor:pointer;" title="Click to copy image" onerror="this.style.display='none'">`;
+          }
+          if (item.headline) html += `<h3>${item.headline}</h3>`;
+          if (item.subject)  html += `<h4>${item.subject}</h4>`;
+          if (item.content)  html += `<div class="content-text">${formatContent(item.content)}</div>`;
+          html += '</div>';
+        });
+        html += '</div>';
+      } else {
+        html = `<div class="empty-state"><p>Content coming soon...</p></div>`;
+      }
+      document.getElementById('subModalContent').innerHTML = html;
+      modal.style.display = 'flex';
+    }
+
+    // Toast notification system
+    function showToast(message, icon = '✨') {
+      const existingToast = document.querySelector('.toast');
+      if (existingToast) existingToast.remove();
+      
+      const toast = document.createElement('div');
+      toast.className = 'toast';
+      toast.innerHTML = `<span class="toast-icon">${icon}</span>${message}`;
+      document.body.appendChild(toast);
+      
+      setTimeout(() => toast.classList.add('show'), 100);
+      setTimeout(() => {
+        toast.classList.remove('show');
+        setTimeout(() => toast.remove(), 400);
+      }, 3000);
+    }
+
+    // Copy actual image data to clipboard (better for social media)
+    async function copyImageToClipboard(url) {
+      try {
+        const response = await fetch(url);
+        const blob = await response.blob();
+        await navigator.clipboard.write([
+          new ClipboardItem({ [blob.type]: blob })
+        ]);
+        showToast('Image copied to clipboard! Ready to paste anywhere.', '📋');
+      } catch (e) {
+        console.error(e);
+        // Fallback to Base64 if clipboard API fails
+        try {
+          const reader = new FileReader();
+          reader.onloadend = () => {
+            navigator.clipboard.writeText(reader.result)
+              .then(() => showToast('Image copied as text. Paste into text fields.', '📝'))
+              .catch(() => showToast('Copy failed. Try right-click → Copy Image.', '❌'));
+          };
+          reader.readAsDataURL(blob);
+        } catch (fallbackError) {
+          showToast('Copy failed. Try right-click → Copy Image.', '❌');
+        }
+      }
+    }
+
+    // Download image
+    function downloadImage(url, filename = 'boycott-avelo-image') {
+      const link = document.createElement('a');
+      link.href = url;
+      link.download = filename;
+      link.target = '_blank';
+      document.body.appendChild(link);
+      link.click();
+      document.body.removeChild(link);
+      showToast('Download started!', '⬇️');
+    }
+
+    function openSocialModal(card) {
+      const modal = document.getElementById('subModal');
+      document.getElementById('subModalTitle').textContent = card.title;
+      
+      // FIXED: Proper URL encoding and correct share URLs
+      const pageUrl = encodeURIComponent('https://boycottavelo.com');
+      const baseMessage = 'Low Fares. High Cost to Humanity. Avelo Airline subsidizes deportation flights for ICE.';
+      
+      // Social media icons (using provided URLs)
+      const socialIcons = {
+        twitter: 'https://upload.wikimedia.org/wikipedia/commons/thumb/c/ce/X_logo_2023.svg/256px-X_logo_2023.svg.png',
+        facebook: 'https://upload.wikimedia.org/wikipedia/commons/thumb/b/b8/2021_Facebook_icon.svg/256px-2021_Facebook_icon.svg.png',
+        linkedin: 'https://upload.wikimedia.org/wikipedia/commons/thumb/c/ca/LinkedIn_logo_initials.png/240px-LinkedIn_logo_initials.png',
+        whatsapp: 'https://upload.wikimedia.org/wikipedia/commons/thumb/6/6b/WhatsApp.svg/256px-WhatsApp.svg.png',
+        telegram: 'https://upload.wikimedia.org/wikipedia/commons/thumb/8/82/Telegram_logo.svg/256px-Telegram_logo.svg.png',
+        pinterest: 'https://upload.wikimedia.org/wikipedia/commons/thumb/f/fa/Pinterest_logo.svg/256px-Pinterest_logo.svg.png',
+        reddit: 'https://upload.wikimedia.org/wikipedia/commons/thumb/5/58/Reddit_logo_new.svg/256px-Reddit_logo_new.svg.png',
+        instagram: 'https://upload.wikimedia.org/wikipedia/commons/9/95/Instagram_icon.png'
+      };
+      
+      let html = '<div class="sub-cards-grid">';
+      card.modalContent.forEach((item, idx) => {
+        const txt = item.subject || item.headline || baseMessage;
+        const shareText = encodeURIComponent(txt);
+        const fullMessage = encodeURIComponent(`${txt} https://boycottavelo.com`);
+        
+        html += '<div class="sub-card">';
+        if (item.image) {
+          html += `<img src="${item.image}" class="social-share-image" `
+               +  `onclick="copyImageToClipboard('${item.image}')" `
+               +  `onerror="this.style.display='none'" `
+               +  `title="Click to copy image">`;
+          
+          html += '<div class="image-action-buttons">';
+          html += `<button class="image-action-btn copy" onclick="copyImageToClipboard('${item.image}')">`
+               +  `📋 Copy Image</button>`;
+          html += `<a href="${item.image}" class="image-action-btn download" `
+               +  `onclick="downloadImage('${item.image}', 'boycott-avelo-${idx + 1}'); return false;">`
+               +  `⬇️ Download</a>`;
+          html += '</div>';
+        }
+        if (txt) {
+          html += `<div class="social-message">${txt}</div>`;
+        }
+        html += '<div class="social-buttons-grid">';
+        
+        // Twitter/X
+        html += `<a href="https://twitter.com/intent/tweet?text=${fullMessage}" target="_blank"`
+             +  ` class="social-share-btn twitter">`
+             +  `<img src="${socialIcons.twitter}" style="width:16px;height:16px;" alt="X" onerror="this.style.display='none'"> X/Twitter</a>`;
+        
+        // Facebook
+        html += `<a href="https://www.facebook.com/sharer/sharer.php?u=${pageUrl}" target="_blank"`
+             +  ` class="social-share-btn facebook">`
+             +  `<img src="${socialIcons.facebook}" style="width:16px;height:16px;" alt="Facebook" onerror="this.style.display='none'"> Facebook</a>`;
+        
+        // LinkedIn
+        const linkedInTitle = encodeURIComponent('Boycott Avelo - Nashville Chapter');
+        const linkedInSummary = encodeURIComponent(txt);
+        html += `<a href="https://www.linkedin.com/shareArticle?mini=true&url=${pageUrl}&title=${linkedInTitle}&summary=${linkedInSummary}" target="_blank"`
+             +  ` class="social-share-btn linkedin">`
+             +  `<img src="${socialIcons.linkedin}" style="width:16px;height:16px;" alt="LinkedIn" onerror="this.style.display='none'"> LinkedIn</a>`;
+        
+        // WhatsApp
+        html += `<a href="https://wa.me/?text=${fullMessage}" target="_blank"`
+             +  ` class="social-share-btn whatsapp">`
+             +  `<img src="${socialIcons.whatsapp}" style="width:16px;height:16px;" alt="WhatsApp" onerror="this.style.display='none'"> WhatsApp</a>`;
+        
+        // Telegram
+        html += `<a href="https://t.me/share/url?url=${pageUrl}&text=${shareText}" target="_blank"`
+             +  ` class="social-share-btn telegram">`
+             +  `<img src="${socialIcons.telegram}" style="width:16px;height:16px;" alt="Telegram" onerror="this.style.display='none'"> Telegram</a>`;
+        
+        // Pinterest
+        if (item.image) {
+          const imageUrl = encodeURIComponent(item.image);
+          html += `<a href="https://www.pinterest.com/pin/create/button/?url=${pageUrl}`
+               +   `&media=${imageUrl}&description=${shareText}"`
+               +   ` target="_blank" class="social-share-btn pinterest">`
+               +   `<img src="${socialIcons.pinterest}" style="width:16px;height:16px;" alt="Pinterest" onerror="this.style.display='none'"> Pinterest</a>`;
+        }
+        
+        // Reddit
+        const redditTitle = encodeURIComponent('Boycott Avelo - Nashville Chapter');
+        html += `<a href="https://www.reddit.com/submit?url=${pageUrl}&title=${redditTitle}" target="_blank"`
+             +  ` class="social-share-btn reddit">`
+             +  `<img src="${socialIcons.reddit}" style="width:16px;height:16px;" alt="Reddit" onerror="this.style.display='none'"> Reddit</a>`;
+        
+        // Email
+        const emailSubject = encodeURIComponent('Boycott Avelo - Nashville Chapter');
+        html += `<a href="mailto:?subject=${emailSubject}&body=${fullMessage}"`
+             +  ` class="social-share-btn email">`
+             +  `<span class="social-icon">📧</span> Email</a>`;
+
+        html += '</div></div>';
+      });
+      html += '</div>';
+      document.getElementById('subModalContent').innerHTML = html;
+      modal.style.display = 'flex';
+    }
+
+    function openPetitionModal(card) {
+      const modal = document.getElementById('subModal');
+      document.getElementById('subModalTitle').textContent = card.title;
+      
+      // Always try iframe first since we might have shortened URLs
+      let html = '<div class="petition-iframe-container">';
+      html += `<iframe src="${card.url}" class="petition-iframe" title="${card.title}" 
+                      onload="this.style.display='block'; document.querySelector('.iframe-loading')?.remove();"
+                      onerror="window.showPetitionFallback(this)">
+               </iframe>`;
+      html += '<div class="iframe-loading" style="position:absolute; top:50%; left:50%; transform:translate(-50%,-50%); text-align:center; color:#502E90; background: rgba(255,255,255,0.95); padding: 2rem; border-radius: 12px;">';
+      html += '<div style="font-size:2rem; margin-bottom:1rem;">⏳</div>';
+      html += '<div>Loading petition...</div>';
+      html += '</div>';
+      html += '</div>';
+      html += '<div style="text-align: center; margin-top: 1rem;">';
+      html += `<a href="${card.url}" target="_blank" class="image-action-btn">`;
+      html += '🔗 Open petition in new tab</a>';
+      html += '</div>';
+      
+      // Add description if available
+      if (card.desc) {
+        html += `<div style="margin-top: 1.5rem; padding: 1rem; background: rgba(255,255,255,0.08); border-radius: 12px;">`;
+        html += `<p style="color: rgba(255,255,255,0.9); line-height: 1.5;">${card.desc}</p>`;
+        html += '</div>';
+      }
+      
+      document.getElementById('subModalContent').innerHTML = html;
+      modal.style.display = 'flex';
+      
+      // Set a timeout to show fallback if iframe doesn't load quickly
+      setTimeout(() => {
+        const iframe = document.querySelector('.petition-iframe');
+        const loading = document.querySelector('.iframe-loading');
+        if (iframe && loading && iframe.style.display !== 'block') {
+          window.showPetitionFallback(iframe);
+        }
+      }, 3000);
+    }
+    
+    window.showPetitionFallback = function(iframe) {
+      const container = iframe.parentElement;
+      container.innerHTML = `
+        <div style="text-align: center; padding: 3rem 1rem; background: rgba(255,255,255,0.05); border-radius: 12px;">
+          <div style="font-size: 4rem; margin-bottom: 1.5rem;">✊</div>
+          <h3 style="color: #FFCE04; font-size: 1.8rem; margin-bottom: 1rem;">Ready to Make a Difference?</h3>
+          <p style="color: rgba(255,255,255,0.9); font-size: 1.1rem; line-height: 1.6; margin-bottom: 2rem; max-width: 500px; margin-left: auto; margin-right: auto;">
+            Your voice matters! Join thousands who are standing up for what's right. Every signature counts in our fight for justice.
+          </p>
+          <div style="font-size: 3rem; margin-bottom: 1rem;">📝</div>
+          <p style="color: rgba(255,255,255,0.8); font-size: 0.95rem;">Click the button below to sign the petition</p>
+        </div>
+      `;
+    }
+
+    function closeSubModal() {
+      document.getElementById('subModal').style.display = 'none';
+    }
+
+    document.addEventListener('DOMContentLoaded', loadData);
+    document.addEventListener('keydown', e => { if (e.key === 'Escape') closeSubModal(); });
+  </script>
+</body>
+</html>
